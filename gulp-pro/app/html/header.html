@@ -1,0 +1,213 @@
+
+<div class="header_top" id="header_top">
+  <div class="top_nav">
+    <div class="gongao">
+      <span>公告：</span>
+      <ul class="notivc_scroll" id="notivc_scroll">
+        <li><a href="javascript:;">【公告】防诈骗提醒</a></li>
+        <li><a href="javascript:;">【紧急通知】关于短信发送异常的...</a></li>
+        <li><a href="javascript:;">&nbsp;优品惠（优购物）5周年庆，盛大...</a></li>
+        <li><a href="javascript:;">【注意】自主语音订购说明</a></li>
+      </ul>
+    </div>
+    <ul class="top-nav-tool" id="content">
+
+    </ul>
+
+    <script type="text/html" id="loginAfter">
+        <a href="javascript:;"></a>
+        <ul>
+          	<li>
+      					<b style="font-size:13px;color:red;">Hi </b><i style="font-size:13px;color:red;margin-right:12px;">{{data[0].phone}}</i>
+      			</li>
+            <li><a href="javascript:;" id="loginOut">登出</a><span>|</span></li>
+            <li><a href="javascript:;">我的订单</a><span>|</span></li>
+            <li><a href="javascript:;">我的关注</a><span>|</span></li>
+            <li><a href="javascript:;">资讯</a><span>|</span></li>
+            <li><a href="javascript:;">品牌馆</a><span>|</span></li>
+            <li><a href="javascript:;">手机优品惠</a></li>
+      	</ul>
+    </script>
+
+    <script type="text/html" id="loginBefore">
+      <li><a href="http://127.0.0.1:2333/html/register.html">注册</a><span>|</span></li>
+      <li><a href="http://127.0.0.1:2333/html/login.html">登录</a><span>|</span></li>
+      <li><a href="javascript:;">我的订单</a><span>|</span></li>
+      <li><a href="javascript:;">我的关注</a><span>|</span></li>
+      <li><a href="javascript:;">资讯</a><span>|</span></li>
+      <li><a href="javascript:;">品牌馆</a><span>|</span></li>
+      <li><a href="javascript:;">手机优品惠</a></li>
+    </script>
+
+  </div>
+</div>
+
+
+
+
+
+
+<!-- logo -->
+<div class="header_logo">
+  <div class="logo">
+    <a href="http://127.0.0.1:2333/index.html">
+      <img src="/images/logo.png" alt="">
+    </a>
+    <p>
+      <a href="javascript:;">
+        <img src="/images/logom.jpg" lt="">
+      </a>
+    </p>
+  </div>
+
+  <!-- 搜索 -->
+  <div class="search">
+    <div class="sch">
+      <form action="/html/select.html" method="get">
+        <div class="l">
+          <!-- <input type="text" class="sch_in" id="sch_in" name="keywords" value="" onfocus="if(this.value!=''){this.value=''};" onblur="if(this.value==''||this.value=='请输入商品名称或货号'){this.value='请输入商品名称或货号';}"> -->
+          <input type="text" class="sch_in" name="keywords" placeholder="请输入商品名称或货号">
+        </div>
+        <div class="r">
+          <input id="sch_btn" type="submit" class="sch_btn" value="">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 我的购物车 -->
+  <div class="mycart">
+    <div class="cart_bag">
+      <div class="w_bj">
+        <i class="icar">
+          <img src="/images/gwc.png" alt="">
+        </i>
+        <a href="http://127.0.0.1:2333/html/cart.html">我的购物车</a>
+        <p id="contentNum"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 数量模板 -->
+<script type="text/html" id="goodNum">
+  <span class="carnum">{{data}}</span>
+</script>
+
+
+<!-- 主导航栏 -->
+<div class="main_nav">
+  <div class="m_center">
+    <ul class="navul">
+      <li id="indexLi" class="channel ac"><a href="http://127.0.0.1:2333/index.html">首页</a></li>
+      <li id="TVLi" class="channel"><a class="a_tvicon" href="javascript:;">视频</a></li>
+      <li id="foodsLi" class="channel"><a href="http://127.0.0.1:2333/html/foods.html">食品</a></li>
+      <li id="indexLi" class="channel"><a href="javascript:;">家具</a></li>
+      <li id="indexLi" class="channel"><a href="javascript:;">美妆</a></li>
+      <li id="indexLi" class="channel"><a href="javascript:;">服饰</a></li>
+      <li id="indexLi" class="navcat">
+          <dl class="alnav" id="fenlei">
+            <dt class="sysp" >
+              <p>所有商品分类</p>
+            </dt>
+            <dd class="qb_fl clearfix" id="fenleilist">
+              <div class="fllist">
+                <div class="fllisttop clearfix">
+                  <div class="kinds">
+                    <div class="kindstop">
+                      <div class="stat">
+                        <img src="/images/newsix_03.png" alt="">
+                      </div>
+                      <div class="stat_hover"></div>
+                      <a href="javascript:;" target="_blank">品质厨房</a>
+                    </div>
+                    <div class="kindsbot">
+                      <a href="javascript:;">烹饪厨具</a>
+                      <a href="javascript:;">厨房电器</a>
+                      <a href="javascript:;">餐饮用具</a>
+                      <a href="javascript:;">厨房配件</a>
+                    </div>
+                  </div>
+                  <div class="kinds">
+                    <div class="kindstop">
+                      <div class="stat">
+                        <img src="/images/newsix_03.png" alt="">
+                      </div>
+                      <div class="stat_hover"></div>
+                      <a href="javascript:;" target="_blank">品质厨房</a>
+                    </div>
+                    <div class="kindsbot">
+                      <a href="javascript:;">烹饪厨具</a>
+                      <a href="javascript:;">厨房电器</a>
+                      <a href="javascript:;">餐饮用具</a>
+                      <a href="javascript:;">厨房配件</a>
+                    </div>
+                  </div>
+                  <div class="kinds">
+                    <div class="kindstop">
+                      <div class="stat">
+                        <img src="/images/newsix_03.png" alt="">
+                      </div>
+                      <div class="stat_hover"></div>
+                      <a href="javascript:;" target="_blank">品质厨房</a>
+                    </div>
+                    <div class="kindsbot">
+                      <a href="javascript:;">烹饪厨具</a>
+                      <a href="javascript:;">厨房电器</a>
+                      <a href="javascript:;">餐饮用具</a>
+                      <a href="javascript:;">厨房配件</a>
+                    </div>
+                  </div>
+                  <div class="kinds">
+                    <div class="kindstop">
+                      <div class="stat">
+                        <img src="/images/newsix_03.png" alt="">
+                      </div>
+                      <div class="stat_hover"></div>
+                      <a href="javascript:;" target="_blank">品质厨房</a>
+                    </div>
+                    <div class="kindsbot">
+                      <a href="javascript:;">烹饪厨具</a>
+                      <a href="javascript:;">厨房电器</a>
+                      <a href="javascript:;">餐饮用具</a>
+                      <a href="javascript:;">厨房配件</a>
+                    </div>
+                  </div>
+                  <div class="kinds">
+                    <div class="kindstop">
+                      <div class="stat">
+                        <img src="/images/newsix_03.png" alt="">
+                      </div>
+                      <div class="stat_hover"></div>
+                      <a href="javascript:;" target="_blank">品质厨房</a>
+                    </div>
+                    <div class="kindsbot">
+                      <a href="javascript:;">烹饪厨具</a>
+                      <a href="javascript:;">厨房电器</a>
+                      <a href="javascript:;">餐饮用具</a>
+                      <a href="javascript:;">厨房配件</a>
+                    </div>
+                  </div>
+                  <div class="kinds">
+                    <div class="kindstop">
+                      <div class="stat">
+                        <img src="/images/newsix_03.png" alt="">
+                      </div>
+                      <div class="stat_hover"></div>
+                      <a href="javascript:;" target="_blank">品质厨房</a>
+                    </div>
+                    <div class="kindsbot">
+                      <a href="javascript:;">烹饪厨具</a>
+                      <a href="javascript:;">厨房电器</a>
+                      <a href="javascript:;">餐饮用具</a>
+                      <a href="javascript:;">厨房配件</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </dd>
+          </dl>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>搜索列表页</title>
+  <link rel="stylesheet" href="/css/select.css">
+  <script type="text/javascript" src="/libs/require.js" data-main="/js/select.js"></script>
+</head>
+<body>
+  <header></header>
+
+  <!-- main -->
+  <div class="classify">
+    <div class="searchd" id="selectNullContent">
+
+
+      <script type="text/html" id="selectNull">
+        <!-- 空界面 -->
+        <div class="sear_conm">
+          <div class="box">
+            <div class="ico"></div>
+            <div class="title">抱歉，没有找到
+              <span>
+                <strong>"请输入商品名称或货号"</strong>
+              </span>相关的产品</div>
+              <div class="cl"></div>
+              <div class="remind">
+                <div class="left">建议您：</div>
+                <div class="right">
+                  <ul>
+                    <li>1. 看看输入的文字是否有误</li>
+                    <li>2. 调整关键字，如"ZTEN983"改成"ZTE N983"</li>
+                    <li>3. 重新搜索
+                    </li>
+                  </ul>
+                </div>
+                <div class="cl"></div>
+              </div>
+            </div>
+          </div>
+
+      </script>
+
+      <div class="search_jg">
+        <!-- 筛选 -->
+        <!-- <div class="search_num">
+          <p class="sear_result">
+
+          </p>
+        </div> -->
+        <div class="shaix">
+          <div class="shx">
+            <dl class="clearfix">
+              <dt>品牌</dt>
+              <dd class="sx_dl clearfix">
+                <div class="allpro">
+                  <a href="javascript:;">全部</a>
+                </div>
+                <div class="ddpro">
+                  <span>
+                    <a href="javascript:;">一农</a>
+                  </span>
+                  <span>
+                    <a href="javascript:;">澳莉嘉-</a>
+                  </span>
+                  <span>
+                    <a href="javascript:;">老香斋</a>
+                  </span>
+                  <span>
+                    <a href="javascript:;">誉海</a>
+                  </span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="clearfix">
+              <dt>价格</dt>
+              <dd class="sx_dl clearfix">
+                <div class="allpro">
+                  <a href="javascript:;">全部</a>
+                </div>
+                <div class="ddpro">
+                  <span>
+                    <a href="javascript:;">0-100</a>
+                  </span>
+                  <span>
+                    <a href="javascript:;">100-200</a>
+                  </span>
+                </div>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 商品具体内容 -->
+    <div class="classify_con">
+      <div class="classify_list">
+        <div class="list_con">
+          <div class="good_list">
+
+            <div class="good_list_nav">
+              <div class="fl nav_sorting">
+                <ul class="nav_sorting_list">
+
+                  <li>快速查找：</li>
+                  <li class="clickbg">
+                    <a href="javascript:;">
+                      <span>相关度</span>
+                    </a>
+                  </li>
+                  <li><b>|</b></li>
+                  <li class="navli">
+                    <a href="javascript:;">
+                      <span>销量</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="smPruArea clearfix" id="selectContent"></div>
+
+            <!-- 商品数据模块 -->
+            <script type="text/html" id="selectGoods">
+              {{each data item value}}
+              <div class="pruwrap">
+                <dl class="pruwrapl mg1">
+                  <dt>
+                    <div class="goodsphoto aBtn" data-id="{{item.goodNum}}">
+                      <a href="javascript:;" target="_blank">
+                        <img src="/images/{{item.img}}" alt="">
+                      </a>
+                    </div>
+                    <div class="goods_pro_state">限时优惠，即将恢复￥{{item.oldprice}}</div>
+                    <div class="sals_icon_right icon_zj">{{item.oldprice - item.nowprice}}</div>
+                  </dt>
+                  <dd class="goods_title">
+                    <a href="javascript:;">{{item.title}}</a>
+                  </dd>
+                  <dd class="goods_picmass">
+                    <div class="fl price">
+                      <div class="fl">
+                        <div class="original_price"></div>
+                        <div class="now_price">
+                          <sapn>￥</sapn>
+                          {{item.nowprice}}
+                        </div>
+                      </div>
+                      <span class="fl sale_price">
+                        <p class="i_pos_abs">
+                          <em class="i_tag i_zj">直降</em>
+                        </p>
+                        <span class="or_p">平日价</span>
+                        <em class="line_price">
+                          <i>￥</i>
+                          {{item.oldprice}}
+                        </em>
+                      </span>
+                    </div>
+                    <div class="fr review"></div>
+                  </dd>
+                </dl>
+              </div>
+            {{/each}}
+            </script>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer></footer>
+</body>
+</html>

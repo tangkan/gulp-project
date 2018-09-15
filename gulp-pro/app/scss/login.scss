@@ -1,0 +1,159 @@
+@import "resetStyle";
+@import "header";
+@import "footer";
+@import "popBox";
+@mixin dis{
+  display: block;
+  height: 57px;
+  overflow: hidden;
+}
+//登录
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix{
+  &::after{
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+  }
+}
+.welland{
+  width: 968px;
+  height: 694px;
+  margin: 0 auto;
+  font: 12px '宋体';
+  padding-bottom: 50px;
+  .EWM{
+    position: absolute;
+    top: 152px;
+    left: 50%;
+    margin: 0 0 0 -628px;
+  }
+  .land_logo{
+    height: 112px;
+    .land_logo_img{
+      height: 57px;
+      margin-top: 31px;
+      a{
+        @include dis;
+        width: 185px;
+        background: url(/images/welland.gif) 0px 0px no-repeat;
+      }
+      .reglogo{
+        @include dis;
+        width: 168px;
+        background: url(/images//welreg_01.gif) 0px 0px no-repeat;
+      }
+    }
+    .kefuphone{
+      color: rgb(82, 82, 82);
+      padding-top: 70px;
+      a{
+        color: rgb(0, 137, 207);
+      }
+    }
+  }
+  .regnav{
+    height: 42px;
+    margin-top: 5px;
+    ul li{
+      display: block;
+      float: left;
+      margin-right: 2px;
+      width: 225px;
+      height: 42px;
+      cursor: pointer;
+      line-height: 42px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      background: url(/images/welreg_01.gif) 0px -58px no-repeat;
+      .icon4{
+        height: 16px;
+        padding-left: 20px;
+        background: url(/images/welreg_01.gif) 0px -233px no-repeat;
+      }
+    }
+    .regnav_tips{
+      margin-top: 15px;
+      .cg{
+        color: rgb(0, 137, 207);
+      }
+    }
+  }
+
+  //登录开始
+  .land_con{
+    border: 2px solid #ff8400;
+    width: 964px;
+    height: 442px;
+    .land_con_ll{
+      width: 532px;
+      height: 346px;
+      color: #666666;
+      padding-top: 62px;
+      margin: 0 auto;
+      .land_item {
+        width: 351px;
+        height: 65px;
+        .item_ifo{
+          position: relative;
+          z-index: 1;
+        }
+        .yhm_text{
+          font: 13px Arial;
+          color: #222;
+          width: 352px;
+          padding: 5px 25px 5px 10px;
+          height: 37px;
+          line-height: 25px;
+          border: 1px solid #a2a2a2;
+        }
+      }
+    }
+  }
+  .i-name {
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    z-index: 10;
+  }
+  .land_item2 {
+    width: 351px;
+    height: 31px;
+  }
+  .mjy{
+    height: 13px;
+    line-height: 13px;
+    display: block;
+    margin-left: 6px;
+  }
+  .login_btn{
+    height: 37px;
+    margin-top: 10px;
+    .btn_img {
+      width: 351px;
+      height: 37px;
+      background: url(/images/welland.gif) 0 -117px no-repeat;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .login_tips {
+    padding: 25px 0;
+    color: #888;
+    width: 351px;
+    line-height: 22px;
+    p{
+      color: #666;
+      font-weight: 600;
+    }
+  }
+}

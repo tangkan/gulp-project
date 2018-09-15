@@ -1,0 +1,104 @@
+@mixin webz{
+  width:1000px;
+  margin: 0 auto;
+}
+//底部样式
+footer{
+  height: auto;
+  text-align: center;
+  padding: 0;
+  background: 0;
+  .footad{
+    @include webz;
+    height: 520px;
+  }
+  .footer_center{
+    @include webz;
+    height: 167px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 26px 0 26px 75px;
+    ul{
+      float: left;
+      width: 138px;
+      height: 114px;
+      padding-left: 42px;
+      border-right: 1px dotted #e6e6e6;
+      text-align: left;
+      li{
+        &:first-child{
+          font-size: 16px;
+          color: #333;
+        }
+        height: 22px;
+        line-height: 22px;
+        a{
+          color: #666;
+        }
+      }
+    }
+    .erweima{
+      width: 254px;
+      float: left;
+      margin-left: 20px;
+      .l{
+        float: left;
+        width:80px;
+        text-align: center;
+        em{
+          color: #999;
+        }
+      }
+      .dh{
+        margin: 25px 0 0 25px;
+        float: left;
+      }
+    }
+  }
+  .foot_info{
+    @include webz;
+    padding-top: 22px;
+    text-align: center;
+    .footer-list{
+      height: 26px;
+      color: #555;
+      a{
+        padding: 0 6px;
+        color: #555;
+        font-size: 13px;
+      }
+    }
+  }
+  .yqlink{
+    @include webz;
+    text-align: left;
+    color: #666;
+    p{
+      line-height: 22px;
+      a{
+        color: #666;
+        padding-right: 8px;
+      }
+    }
+  }
+  .copyright{
+    color: #555;
+    line-height:22px;
+  }
+  .num{
+    margin: 0 auto;
+    text-align: center;
+    a{
+      display: inline-block;
+      text-decoration: none;
+      height: 22px;
+      line-height: 22px;
+      img{
+        float: left;
+      }
+      p{
+        float:left;
+        margin: 0px 0px 0px 5px; color:#555;
+      }
+    }
+  }
+}

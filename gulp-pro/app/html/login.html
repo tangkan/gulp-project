@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <link rel="stylesheet" href="/css/login.css">
+  <!-- <script type="text/javascript" src="/js/popBox.js"></script> -->
+  <script type="text/javascript" src="/libs/require.js" data-main="/js/login.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="header_top">
+      <div class="top_nav">
+
+        <ul class="top-nav-tool">
+          <li><a href="http://127.0.0.1:2333/html/register.html">注册</a><span>|</span></li>
+          <li><a href="javascript:;">我的订单</a><span>|</span></li>
+          <li><a href="javascript:;">我的关注</a><span>|</span></li>
+          <li><a href="javascript:;">资讯</a><span>|</span></li>
+          <li><a href="javascript:;">品牌馆</a><span>|</span></li>
+          <li><a href="javascript:;">手机优品惠</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+<!-- 登录  -->
+  <div class="welland">
+    <img class="EWM" src="/images/logEWM.gif" alt="">
+    <div class="land_logo">
+      <input type="hidden" name="" id="jihuo">
+      <div class="fl land_logo_img">
+        <a class="fl" href="/"></a>
+        <span class="fl reglogo"></span>
+      </div>
+      <p class="fr kefuphone">
+        还没有注册？
+        <a href="javascript:;" target="_blank">现在注册》</a>
+      </p>
+    </div>
+
+    <div class="regnav">
+      <ul>
+        <li class="regnav1">
+          <span class="icon4">登录</span>
+        </li>
+      </ul>
+      <label class="fr regnav_tips">
+        如有疑问请点击
+        <a class="cg" href="javascript:;" target="_blank">帮助中心</a>
+        ,或拨打客服热线
+        <em><400-707-0707></400-707-0707></em>
+      </label>
+    </div>
+
+    <!-- 登录开始 -->
+    <div class="land_con clearfix">
+      <div class="land_con_ll">
+
+        <form action="" method="get">
+
+        <!-- 用户名 -->
+        <div class="land_item">
+          <input type="hidden">
+          <span>手机号/邮箱</span>
+          <div class="item_ifo">
+            <input id="user" type="text" class="yhm_text" placeholder="请输入您注册的手机号/邮箱">
+            <div class="i_name"></div>
+          </div>
+
+        </div>
+
+        <!-- 密码 -->
+        <div class="land_item">
+          <input type="hidden">
+          <span>密码</span>
+          <div class="item_ifo">
+            <input id="password" type="password" class="yhm_text" placeholder="请输入您的密码">
+            <div class="i_name"></div>
+          </div>
+        </div>
+
+        <!-- 忘记密码 -->
+        <div class="land_item2">
+          <input type="checkbox" class="fl checkbox">
+          <label class="fl mjy">记住用户名</label>
+          <label class="fr wjma">
+            <a href="javascript:;" target="_blank">忘记密码？</a>
+          </label>
+        </div>
+
+
+        <!-- 登录按钮 -->
+        <div class="login_btn">
+          <input id="lonBtn" type="button" class="btn_img">
+        </div>
+
+        <!-- 温馨提示 -->
+        <div class="login_tips">
+          <p>温馨提示：</p>
+          优品惠升级为电视购物大全，其中融合了优购物、时尚购等多家优质购物频道。时尚购APP用户已合并至优品惠，可以通过时尚购APP账户和密码登录优品惠。
+        </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <footer></footer>
+</body>
+</html>

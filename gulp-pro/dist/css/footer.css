@@ -1,0 +1,82 @@
+footer {
+  height: auto;
+  text-align: center;
+  padding: 0;
+  background: 0; }
+  footer .footad {
+    width: 1000px;
+    margin: 0 auto;
+    height: 520px; }
+  footer .footer_center {
+    width: 1000px;
+    margin: 0 auto;
+    height: 167px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 26px 0 26px 75px; }
+    footer .footer_center ul {
+      float: left;
+      width: 138px;
+      height: 114px;
+      padding-left: 42px;
+      border-right: 1px dotted #e6e6e6;
+      text-align: left; }
+      footer .footer_center ul li {
+        height: 22px;
+        line-height: 22px; }
+        footer .footer_center ul li:first-child {
+          font-size: 16px;
+          color: #333; }
+        footer .footer_center ul li a {
+          color: #666; }
+    footer .footer_center .erweima {
+      width: 254px;
+      float: left;
+      margin-left: 20px; }
+      footer .footer_center .erweima .l {
+        float: left;
+        width: 80px;
+        text-align: center; }
+        footer .footer_center .erweima .l em {
+          color: #999; }
+      footer .footer_center .erweima .dh {
+        margin: 25px 0 0 25px;
+        float: left; }
+  footer .foot_info {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 22px;
+    text-align: center; }
+    footer .foot_info .footer-list {
+      height: 26px;
+      color: #555; }
+      footer .foot_info .footer-list a {
+        padding: 0 6px;
+        color: #555;
+        font-size: 13px; }
+  footer .yqlink {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    color: #666; }
+    footer .yqlink p {
+      line-height: 22px; }
+      footer .yqlink p a {
+        color: #666;
+        padding-right: 8px; }
+  footer .copyright {
+    color: #555;
+    line-height: 22px; }
+  footer .num {
+    margin: 0 auto;
+    text-align: center; }
+    footer .num a {
+      display: inline-block;
+      text-decoration: none;
+      height: 22px;
+      line-height: 22px; }
+      footer .num a img {
+        float: left; }
+      footer .num a p {
+        float: left;
+        margin: 0px 0px 0px 5px;
+        color: #555; }

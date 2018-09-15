@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html style="font-size:16px">
+<head>
+	<title>优购物(优品惠)</title>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<script type="text/javascript" src="/libs/require.js" data-main="/js/index.js"></script>
+</head>
+<body>
+<header></header>
+
+<div class="main">
+
+	<!-- 首页广告轮播 -->
+	<div class="scroll_div">
+		<div class="scroll" id="scroll">
+			<div class="scroll_cont" id="lunbo">
+				<ul>
+					<li>
+						<a href="javascript:;">
+							<img src="/images/lunbo.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="/images/1536256922120877891.jpg" alt="">
+						</a>
+					</li>
+				</ul>
+				<ol></ol>
+			</div>
+			<a class="arr_left" id="arr_left"></a>
+			<a class="arr_right" id="arr_right"></a>
+		</div>
+	</div>
+
+	<!-- 货品信息 -->
+	<div class="tv">
+		<!-- 直播内容头部 -->
+		<div class="tv_top">
+			<span class="fl">
+				<i class="fl home_title_line"></i>
+				<span class="home_title_tt">
+					<i>TV</i>
+					直播
+				</span>
+				网站下单立减10元
+			</span>
+			<a href="javascript:;"></a>
+		</div>
+
+		<!-- 直播内容模块 -->
+		<script type="text/html" id="TVgoods">
+			<li>
+				{{each data item value}}
+
+				<div class="tv_live_cc">
+					<div class="tv_live_img_box">
+						<i class="live_ing">
+							TV直播中
+						</i>
+						<img class="tv_logo" src="/images/41f20d57-6966-4609-b968-b8fdeb63d2de.png" alt="">
+						<a href="javascript:;" data-id="{{item.goodNum}}" class="aBtn"}>
+							<img src="/images/{{item.img}}" alt="" style="width:300px;height:160px"/>
+						</a>
+					</div>
+					<a href="javascript:;">
+						<p class="tv_live_box_tit">
+							<em class="img_tit">{{item.title}}</em>
+						</p>
+						<div class="tv_live_box_yen">
+							<span class="fl tv_live_box_price">
+								<i>￥</i>{{item.nowprice}}
+							</span>
+						</div>
+					</a>
+				</div>
+
+				{{/each}}
+
+			</li>
+		</script>
+
+		<!-- 直播内容 -->
+		<div class="fl tv_live">
+			<div class="tv_live_list">
+				<ul id="TVgoodsContent">
+
+				</ul>
+			</div>
+			<div class="t_prev"></div>
+			<div class="t_next"></div>
+		</div>
+	</div>
+
+	<!-- 今日限时购 -->
+	<div class="time_limit">
+		<!-- 限时购头部 -->
+		<div class="time_limit_top">
+			<span class="fl">
+				<i class="fl home_title_line"></i>
+				<span class="home_title_tt">
+					<i>今日</i>限时购
+				</span>
+			</span>
+			<!-- 倒计时 -->
+			<div class="fr day_djs">
+				本场还剩
+				<div class="fr livetime_day" data-time="65092">
+					<span class="d_hour" id="d_hour">00</span>:
+					<span class="d_minute" id="d_minute">00</span>:
+					<span class="d_second" id="d_second">00</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- 限时购内容 -->
+		<div class="fl time_limit_content">
+			<div class="fl daily">
+				<a href="javascript:;" class="aBtn" data-id="582017_007">
+					<div class="daily_shop">
+						<div class="shadow_lb"></div>
+						<div class="shadow_rt"></div>
+						<div class="everyday">
+							<i class="icon_clock"></i>
+							每日一品
+						</div>
+						<div class="daily_shop_img">
+							<img src="/images/1536191669443887276.jpg" alt="">
+						</div>
+						<p class="daily_shop_tjs">极简设计 挺阔有型</p>
+						<p class="daily_shop_tt">针对解决轻熟龄、熟龄肌肤的各类肌肤问题，特别添加植物胎盘素、胶原蛋白等多种珍惜成分，并特别添加白藜芦醇成分，逆转肌因，从肌肤细胞层面延缓衰老。</p>
+						<p class="daily_shop_box_yen">
+							<span class="daily_shop_box_price">
+								<i>￥</i>
+								199
+							</span>
+							<em class="line_price">
+								<i>￥</i>
+								599
+							</em>
+						</p>
+						<div class="daily_num_tag">
+							<div class="span1">
+								立减</br>
+								<span class="span2">400</span>
+								元
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="fr tv_day_one">
+				<div class="tv_day_one_list">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<!-- js添加数据 -->
+							</a>
+							<a href="javascript:;">
+								<!-- js添加数据 -->
+							</a>
+							<a href="javascript:;">
+								<!-- js添加数据 -->
+							</a>
+						</li>
+						<!-- 中间li（模拟数据） -->
+
+						<script type="text/html" id="NDAYgoods">
+							{{each data item value}}
+							<a href="javascript:;">
+								<div class="tv_day_one_cc aBtn" data-id="{{item.goodNum}}">
+									<div class="tv_day_img_box">
+										<img src="/images/{{item.img}}" alt="" style="width:200px;height:200px;">
+									</div>
+									<p class="tv_live_box_tit">
+										<em class="img_tit">{{item.title}}</em>
+									</p>
+									<div class="tv_live_box_yen">
+										<span class="fl tv_live_box_price">
+											<i>¥</i>
+											{{item.nowprice}}
+										</span>
+                    <em class="line_price">
+											<i>¥</i>
+											{{item.oldprice}}
+										</em>
+									</div>
+									<div class="tv_day_one_yen">
+										<span class="fl tv_live_box_surplus">库存紧张</span>
+                    <p class=" fr cor_red_ing">马上抢</p>
+									</div>
+								</div>
+							</a>
+							{{/each}}
+						</script>
+
+						<li id="NDAYgoodsContent">
+
+						</li>
+						<li>
+							<a href="javascript:;">
+								<!-- js添加shuju -->
+							</a>
+							<a href="javascript:;">
+								<!-- js添加数据 -->
+							</a>
+							<a href="javascript:;">
+								<!-- js添加数据 -->
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 品类精品促销 -->
+	<div class="promotion">
+		<!-- 头部 -->
+		<div class="pro_title fl">
+          <span class="fl">
+						<i class="fl pro_title_line"></i>
+						<span class="pro_title_tt">
+							<i>品类精选</i>
+							促销
+						</span>
+					</span>
+      </div>
+
+			<!-- 内容 -->
+			<div class="pro_content">
+				<a href="javascript:;">
+					<img class="lazy_loading" src="/images/1535994658212125524.jpg" alt="">
+				</a>
+				<a href="javascript:;">
+					<img class="lazy_loading" src="/images/1536012089561332863.jpg" alt="">
+				</a>
+			</div>
+	</div>
+
+	<!-- 全球尖货 -->
+	<div class="gl">
+		<!-- 尖货头部 -->
+		<div class="gl_title cl">
+      <span class="fl">
+				<i class="fl gl_title_line"></i>
+				<span class="gl_title_tt">全球尖货</span>
+			</span>
+    </div>
+
+		<script type="text/html" id="MAINgoods">
+			{{each data item value}}
+		<li>
+			<div class="three_box">
+				<a href="javascript:;" class="aBtn" data-id="{{item.goodNum}}">
+					<div class="three_img_box">
+						<img class="lazy_loading" src="/images/{{item.img}}" alt="">
+					</div>
+					<p class="three_box_tit c_clearfix">
+						<em class="img_tit">{{item.title}}</em>
+					</p>
+					<p class="three_subtit">
+						{{item.description}}
+					</p>
+					<div class="three_yen">
+						<span class="fl three_price">
+							<i>￥</i>
+							{{item.nowprice}}
+						</span>
+						<span class="fl sale_price">
+							<p class="i_pos_abs"></p>
+							<span class="fl five_star"></span>
+							<span class="or_p">平日价</span>
+							<em class="line_price">
+								<i>￥</i>
+								{{item.oldprice}}
+							</em>
+						</span>
+						<span class="fl purchased">
+							<i>4671人</i>
+							已购买
+						</span>
+					</div>
+				</a>
+			</div>
+		</li>
+		{{/each}}
+		</script>
+		<!-- 尖货内容 -->
+		<div class="gl_content c_clearfix">
+			<ul id="MAINgoodsContent">
+
+			</ul>
+		</div>
+	</div>
+</div>
+<footer></footer>
+
+</body>
+</html>

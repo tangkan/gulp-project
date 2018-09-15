@@ -1,0 +1,344 @@
+@import "resetStyle";
+@import "header";
+@import "footer";
+
+.topad{
+  background-color: #d60a2e;
+  text-align: center;
+  height: 80px;
+}
+.webz{
+  margin: 0 auto;
+  width: 1000px;
+}
+.clearfix{
+  display: block;
+  &::after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+
+.header{
+  padding: 20px 0;
+}
+.logo{
+  width: 188px;
+}
+.stepflex{
+  display: block;
+  border-top: 2px solid #ddd;
+  text-align: center;
+  margin: 25px 30px 0 0;
+  float: right;
+  .done{
+    border-top-color: #ff504a;
+    width: 90px;
+    dt{
+      background-position: 0px 0px;
+      left: -45px;
+    }
+    dd{
+      color: #ff504a;
+      left: -45px;
+    }
+  }
+  dl{
+    float: left;
+    position: relative;
+    width: 180px;
+    top: -2px;
+    border-top: 2px solid #ddd;
+    dt{
+      position: relative;
+      margin: -10px auto 0;
+      color: #fff;
+      width: 18px;
+      height: 18px;
+      background-image: url(/images/icons1.png);
+      background-repeat: no-repeat;
+      background-position: 0 -20px;
+      line-height: 18px;
+      font-family: arial;
+    }
+    dd{
+      color: #666;
+      margin-top: 5px;
+      position: relative;
+    }
+  }
+}
+.c_clearfix{
+  zoom: 1;
+  clear: both;
+}
+.shopcart_tit{
+  padding-top: 10px;
+  font-size: 16px;
+  color: #222;
+  line-height: 21px;
+}
+.cart_con_tit{
+  background-color: #f2f2f2;
+  font-size: 12px;
+  color: #666;
+  border: 1px solid #e8e8e8;
+  margin-top: 10px;
+  li{
+    float: left;
+    text-align: left;
+  }
+  .tit_check{
+    padding: 10px 15px 10px 20px;
+    width: 148px;
+    input[type='checkbox'] {
+    height: 13px;
+    vertical-align: middle;
+    width: 13px;
+    }
+    label{
+      margin-left: 20px;
+    }
+  }
+  .tit_meg{
+    padding: 10px 80px 10px 0;
+    width: 360px;
+    height: 36px;
+  }
+  .tit_price{
+    width: 140px;
+    padding: 10px 0;
+  }
+  .tit_quantity{
+    width: 140px;
+    text-align: center;
+    padding: 10px 70px 10px 0;
+  }
+  .tit_sum{
+    width: 140px;
+    padding: 10px 0;
+  }
+  .tit_action{
+    width: 70px;
+    padding: 10px 0;
+  }
+}
+
+  .cart_con{
+    margin: 0;
+    border-top: 0;
+    border: 1px solid #e8e8e8;
+  }
+  .shopping_con{
+    padding: 20px 0 20px 53px;
+    position: relative;
+    display: inline-block;
+    .c_meg{
+      width:455px;
+      height: 80px;
+      float: left;
+      color: #666;
+      dl{
+        float: left;
+        margin-right: 15px;
+      }
+      dt{
+        float: left;
+        margin-right: 15px;
+      }
+      dd{
+        padding-right: 80px;
+        width: 330px;
+        float: left;
+        .m_tit{
+          line-height: 18px;
+          a{
+            color: #666;
+          }
+        }
+      }
+    }
+    .c_price{
+      float: left;
+      width: 140px;
+      margin-top: 33px;
+      color: #666;
+      .c_price_num{
+        line-height: 20px;
+        i{
+          font-size: 14px;
+          font-family: arial;
+        }
+      }
+      .c_tip{
+        color: #f70800;
+        /* margin-top: 10px; */
+        border: 1px solid #f70800;
+        padding: 0 5px;
+        width: 60px;
+      }
+    }
+    .c_quantity{
+      float: left;
+      text-align: center;
+      width: 140px;
+      padding-right: 70px;
+      .c_amount{
+        margin-top: 33px;
+        a{
+          float: left;
+          width: 18px;
+          height: 18px;
+          border: 1px solid #ddd;
+          text-align: center;
+          font-size: 20px;
+          line-height: 17px;
+        }
+        input{
+          border: medium none;
+          border-top: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          height: 20px;
+          line-height: 18px;
+          width: 30px;
+          float: left;
+          text-align: center;
+          color: #666;
+          background: #fff;
+        }
+      }
+    }
+    .c_sum{
+      float: left;
+      width: 140px;
+      color: #666;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 33px;
+      i{
+        font-size: 16px;
+        font-family: arial;
+      }
+    }
+    .c_action{
+      float: left;
+      width: 68px;
+      margin-top: 33px;
+      .i_del{
+        background-image: url(/images/icons1.png);
+        background-repeat: no-repeat;
+        background-position: 0 -125px;
+        width: 18px;
+        height: 20px;
+        float: left;
+        text-indent: -999em;
+        cursor: pointer;
+      }
+    }
+    .c_check{
+      position: absolute;
+      left: 20px;
+      top: 54px;
+      z-index: 2;
+      input[type='checkbox'] {
+          height: 13px;
+          vertical-align: middle;
+          width: 13px  ;
+      }
+    }
+  }
+
+.c_balance{
+  padding: 20px;
+  overflow: hidden;
+  .c_count{
+    float: right;
+    color: #333;
+    p{
+      line-height: 22px;
+    }
+    .c_rt{
+      width: 100px;
+      display: inline-block;
+      text-align: right;
+      float: right;
+      .fs_14{
+        font-size: 14px;
+      }
+    }
+    .c_lt{
+      width: 65px;
+      text-align: right;
+      display: inline-block;
+      float: right;
+    }
+    .c_piece{
+      float: right;
+    }
+    .fw_b{
+      font-weight: bold;
+    }
+    .c_paid{
+      color: #f70800;
+      font-size: 18px;
+      i{
+        font-size: 20px;
+      }
+    }
+  }
+}
+.c_balance_bt{
+  height: 50px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e8e8e8;
+  .balance_bt{
+    float: right;
+    width: 160px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff504a;
+    line-height: 50px;
+  }
+}
+.cart_empty{
+  border: 1px solid #f5f5f5;
+  padding: 110px 0 100px 268px;
+  margin-bottom: 20px;
+  .cart_empty_img{
+    background: url(/images/cart_empty.png) no-repeat;
+    width: 120px;
+    height: 101px;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+  }
+  .cart_empty_tit{
+    font-size: 24px;
+    color: #999;
+    padding-top: 30px;
+    a{
+      font-size: 12px;
+      color: #2767e4;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+  }
+  .cart_empty_tip{
+    color: #999;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+}

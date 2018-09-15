@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>注册</title>
+  <link rel="stylesheet" href="/css/register.css">
+  <script type="text/javascript" src="/libs/require.js" data-main="/js/register.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="header_top">
+      <div class="top_nav">
+
+        <ul class="top-nav-tool">
+          <li><a href="/html/login.html">登录</a><span>|</span></li>
+          <li><a href="javascript:;">我的订单</a><span>|</span></li>
+          <li><a href="javascript:;">我的关注</a><span>|</span></li>
+          <li><a href="javascript:;">资讯</a><span>|</span></li>
+          <li><a href="javascript:;">品牌馆</a><span>|</span></li>
+          <li><a href="javascript:;">手机优品惠</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+<!-- 注册  -->
+  <div class="welland">
+    <img class="EWM" src="/images/logEWM.gif" alt="">
+    <div class="land_logo">
+      <input type="hidden" name="" id="jihuo">
+      <div class="fl land_logo_img">
+        <a class="fl" href="/"></a>
+        <span class="fl reglogo"></span>
+      </div>
+      <p class="fr kefuphone">
+        已经注册,
+        <a href="/html/login.html" target="_blank">现在登录》</a>
+      </p>
+    </div>
+
+    <div class="regnav">
+      <ul>
+        <li class="regnav1">
+          <span class="icon4">注册/TV激活</span>
+        </li>
+      </ul>
+      <label class="fr regnav_tips">
+        如有疑问请点击
+        <a class="cg" href="javascript:;" target="_blank">帮助中心</a>
+        ,或拨打客服热线
+        <em><400-707-0707></400-707-0707></em>
+      </label>
+    </div>
+
+    <!-- 注册开始 -->
+    <div class="land_con clearfix">
+      <div class="phonereg">
+        <input type="hidden" id="tishi">
+
+        <form id="form">
+          <!-- 手机号码 -->
+          <div class="item phone_regName">
+            <span class="fl labname1">手机号码:</span>
+            <div class="fl item_ifo">
+              <input id="phoneNum" type="text" class="regk" style="border-color: rgb(162, 162, 162);">
+              <div class="i_name"></div>
+              <div class="etips" id="etips1">手机号码格式不正确</div>
+            </div>
+          </div>
+          <!-- 邮箱 -->
+          <div class="item phone_regName">
+            <span class="fl labname1">邮箱:</span>
+            <div class="fl item_ifo">
+              <input id="email" type="text" class="regk" style="border-color: rgb(162, 162, 162);">
+              <div class="i_name"></div>
+              <div class="etips" id="etips2">邮箱格式不正确</div>
+            </div>
+          </div>
+          <!-- 密码 -->
+          <div class="item phone_regName">
+            <span class="fl labname1">设置密码:</span>
+            <div class="fl item_ifo">
+              <input id="password" type="password" class="regk" style="border-color: rgb(162, 162, 162);">
+              <div class="i_name"></div>
+              <div class="etips" id="etips3">密码长度为6-12位</div>
+            </div>
+          </div>
+          <!-- 确认密码 -->
+          <div class="item phone_regName">
+            <span class="fl labname1">确认密码:</span>
+            <div class="fl item_ifo">
+              <input id="password1" type="password" class="regk" style="border-color: rgb(162, 162, 162);">
+              <div class="i_name"></div>
+              <div class="etips" id="etips4">两次输入的密码不正确</div>
+            </div>
+          </div>
+          <!-- 协议 -->
+          <div class="item phone_regName">
+            <span class="fl labname1"></span>
+            <div class="item-ifo l">
+                 <input type="checkbox" class="l checkx" id="checkx1">
+                  <label class="l checkx">
+                     我已阅读并同意<a class="cg" href="/article-48.html" target="_blank">《优品惠用户服务承诺》</a>
+                  </label>
+                  <input type="hidden" value="" id="hidden1">
+             </div>
+          </div>
+
+          <!-- 提交 -->
+          <div class="item phone-regName" id="itemh3">
+             <span class="fl labname1"></span>
+             <div class="item-ifo fl">
+                 <input type="button" id="subBtn" class="registsubmit" value="">
+                 <br>
+                 <div class="login_tips">
+                   <p>温馨提示：</p>
+                   优品惠升级为电视购物大全，其中收录了优购物、时尚购物等多家优质购物频道，您可以选购更多优质商品，欢迎您的光临！
+                 </div>
+                 <!-- <label>如有疑问请点击<a class="cg" href="/help.html" target="_blank">帮助中心</a>，或拨打客服热线：<em>400-707-0707</em></label> -->
+             </div>
+        </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <footer></footer>
+</body>
+</html>

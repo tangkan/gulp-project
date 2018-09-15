@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/detail.css">
+  <script type="text/javascript" src="/libs/require.js" data-main="/js/detail.js"></script>
+</head>
+<body>
+  <!-- 头部 -->
+  <header></header>
+
+  <!-- 商品详情 -->
+  <div class="webz">
+    <!-- 面包屑 -->
+    <div class="sh_crumbs"></div>
+
+    <!-- 内容 -->
+    <div class="sh_goods_key clearfix">
+
+      <!-- 商品图片模块  -->
+      <script type="text/html" id="goodImg">
+        <div class="preview">
+          <span class="jqzoom" id="box">
+            <img id="img" src="/images/{{data[0].img}}" alt="" style="width:400px;height:400px;">
+            <div class="jqzoomPup" id="zoom"></div>
+          </span>
+          <div class="zoomdiv" id="bigimg">
+            <img src="/images/{{data[0].img}}" alt="" style="width:800px;height:800px;">
+          </div>
+        </div>
+        <div class="jqzoom_scroll clearfix">
+          <!-- 写到这，小图 -->
+          <a class="prev"></a>
+          <a class="next"></a>
+          <div class="items">
+            <ul id="lkImgs">
+              <li class="active">
+                <img src="/images/{{data[0].lkImg1}}" alt="">
+              </li>
+              <li>
+                <img src="/images/{{data[0].lkImg2}}" alt="">
+              </li>
+              <li>
+                <img src="/images/{{data[0].lkImg3}}" alt="">
+              </li>
+              <li>
+                <img src="/images/{{data[0].lkImg4}}" alt="">
+              </li>
+              <li>
+                <img src="/images/{{data[0].lkImg5}}" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 商品号 -->
+        <div class="sh_goods_share clearfix">
+          <div class="no">商品货号：{{data[0].goodNum}}</div>
+          <!-- <div class="baidu_share"></div> -->
+        </div>
+
+      </script>
+
+
+      <div class="sh_goods_gallery" id="goodImgContent">
+      </div>
+
+    <!-- 详情信息 -->
+    <div class="sh_goods_parameters" id="contentList"></div>
+
+    <script type="text/html" id="goodInfo">
+      <form action="#">
+        <div class="brand clearfix">
+          <span class="country_brand">{{data[0].pinpai}}</span>
+        </div>
+        <h1 class="title">{{data[0].title}}</h1>
+        <div class="description">
+
+          {{data[0].description}}
+        </div>
+        <div class="price_box">
+          <ul class="a_goods_infos">
+            <li class="mb">
+              <span class="price_label">价格</span>
+              <span class="price">
+                <i>￥</i>{{data[0].nowprice}}
+              </span>
+            </li>
+
+            <li>
+              <span class="label">优惠</span>
+              <div>
+                <p>
+                  <span class="tag">降价</span>
+                  <span>
+                    还剩
+                    <span class="HIS_time_new">08天19时03分27秒</span>
+                    ，恢复平日价￥{{data[0].oldprice}}
+                  </span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="choice-buy">
+          <input type="hidden">
+          <dl class="sendto clearfix">
+            <dt>送至</dt>
+            <input type="hidden" id="default_adder_id" value="">
+            <dd class="clearfix">成都市武侯区</dd>
+          </dl>
+          <dl class="number clearfix">
+            <dt>数量</dt>
+            <dd id="goodsNumber">
+              <div class="box">
+                <a class="limit fl" id="lessBtn" href="javascript:;">-</a>
+                <input class="fl" type="text" id="goodsNumberInput" value="1">
+                <a class="fl" id="addBtn" href="javascript:;">+</a>
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <!-- 加入购物车 -->
+        <div class="add_cart">
+          <button type="button" class="sh_shopping_cart" name="button" id="addCart">
+            <i></i>
+            加入购物车
+          </button>
+          <p class="merchant_zg">
+            <span>商家直营,并提供售后服务</span>
+          </p>
+        </div>
+      </form>
+    </script>
+
+
+    </div>
+
+
+    <!-- 商标 -->
+    <div class="sh_goods_declaration">
+      <img src="/images/declaration3.jpg" alt="" class="lazy_loading">
+    </div>
+
+
+    <!-- 详细参数 -->
+    <div class="sh_goods_details clearfix">
+      <div class="group">
+        <div class="related">
+          <div class="tab clearfix">
+            <div class="tab_select" id="tab_select">
+              <a href="javascript:;" class="active">商品详情</a>
+              <a href="javascript:;" >评论</a>
+              <a href="javascript:;" >服务说明</a>
+            </div>
+          </div>
+
+          <div class="details" id="detailsContent">
+          </div>
+
+          <!-- 商品参数模板 -->
+          <script type="text/html" id="details">
+            <h3 class="title"></h3>
+            <ul class="details_table">
+              <li class="row clearfix">
+                <div class="text_left">
+                  <span>品牌</span>
+                </div>
+                <div class="text_right">{{data[0].pinpai}}</div>
+              </li>
+              <li class="row clearfix">
+                <div class="text_left">
+                  <span>商品名称</span>
+                </div>
+                <div class="text_right">{{data[0].title}}</div>
+              </li>
+
+            </ul>
+
+            <!-- 图片参数 -->
+            <div class="sh_goods_block"></div>
+          </script>
+
+        </div>
+      </div>
+    </div>
+
+</div>
+  <!-- 尾部 -->
+  <footer></footer>
+</body>
+</html>

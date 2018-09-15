@@ -1,0 +1,757 @@
+@import "resetStyle";
+@import "header";
+@import "footer";
+@mixin webz{
+  width:1000px;
+  margin: 0 auto;
+}
+//首页样式
+.main{
+  width: 100%;
+
+  //轮播
+  .scroll_div{
+    text-align: center;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+    .scroll{
+      width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      height: 340px;
+      .arr_left {
+        position: absolute;
+        width: 30px;
+        background: url(/images/scroll.png) no-repeat 0 0;
+        height: 60px;
+        top: 140px;
+        cursor: pointer;
+        left: 0;
+        display: none;
+      }
+      .arr_right{
+        position: absolute;
+        width: 30px;
+        background: url(/images/scroll.png) no-repeat 0 -76px;
+        height: 60px;
+        top: 140px;
+        cursor: pointer;
+        right: 0;
+        display: none;
+      }
+      .scroll_cont{
+        position: absolute;
+        top: 0;
+        height: 340px;
+        overflow: hidden;
+        ul{
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          li{
+            float: left;
+          }
+        }
+        ol{
+          position:absolute;
+          right: 10%;
+          // top: 313px;
+          left: 666px;
+          bottom: 10px;
+          z-index:6;
+          .ac{
+            background: red;
+            color: #fff;
+          }
+          li{
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #8a7f7f;
+            margin-left: 5px;
+            float: left;
+            line-height: 20px;
+            text-align: center;
+            a{
+              background: red;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //货品信息
+  .tv{
+    @include webz;
+    height: 362px;
+    .fl{
+      float: left;
+    }
+    .tv_top{
+      width: 100%;
+      height: 34px;
+      line-height: 34px;
+      color: #444;
+      font-size: 16px;
+      margin-top: 16px;
+      .home_title_line{
+        width: 4px;
+        height: 22px;
+        background: #f70800;
+        margin: 7px 8px 0 0;
+      }
+      .home_title_tt{
+        font-size: 24px;
+        color: #222;
+        margin-right: 5px;
+        font-weight: 600;
+        i{
+          font-size: 26px;
+          color: #f70800;
+
+        }
+      }
+      a{
+        float: right;
+        width: 116px;
+        height: 34px;
+        background: url(../images/program_list_btn.png) no-repeat;
+      }
+    }
+    //内容
+    .tv_live{
+      width: 960px;
+      padding: 19px;
+      background: #FFF;
+      border: 1px solid #ddd;
+      margin-top: 12px;
+      position: relative;
+      .tv_live_list{
+        height: 278px;
+        overflow: hidden;
+        position: relative;
+        ul{
+          width:960px;
+          position: absolute;
+          li{
+            position: relative;
+            float: left;
+            height: 278px;
+            overflow: hidden;
+            width: 960px;
+            .tv_live_cc{
+              float: left;
+              width: 321px;
+              padding: 0 10px;
+              border-left: 1px solid #eee;
+              margin-left: -1px;
+              .tv_live_img_box{
+                width: 300px;
+                position: relative;
+                .live_ing{
+                  width: 51px;
+                  height: 22px;
+                  line-height: 22px;
+                  position: absolute;
+                  top: 10px;
+                  left: 10px;
+                  background: -webkit-linear-gradient(left, #ff5953, #ff3d5a);
+                  background: -o-linear-gradient(left, #ff5953, #ff3d5a);
+                  background: -moz-linear-gradient(left, #ff5953, #ff3d5a);
+                  background: linear-gradient(left, #ff5953, #ff3d5a);
+                  border-radius: 11px;
+                  padding: 0 10px 0 19px;
+                  color: #FFF;
+                  font-size: 12px;
+                  white-space: nowrap;
+                  &::after{
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    background: #FFF;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 10px;
+                    top: 8px;
+                  }
+                }
+                .tv_logo{
+                  position: absolute;
+                  right: 10px;
+                  top: 10px;
+                  width: 67px;
+                  height: 23px;
+                }
+                img{
+                  width: 100%;
+                }
+              }
+              .tv_live_box_tit{
+                margin-top: 10px;
+                height: 52px;
+                line-height: 26px;
+                overflow: hidden;
+                padding: 0 10px;
+                .img_tit{
+                  font-size: 16px;
+                  display: block;
+                  overflow: hidden;
+                  &::after{
+                    content: ".";
+                    display: block;
+                    height: 0;
+                    visibility: hidden;
+                    clear: both;
+                  }
+                }
+              }
+              .tv_live_box_yen{
+                margin-top: 13px;
+                height: 26px;
+                padding: 0 10px 3px 10px;
+                .tv_live_box_price{
+                  font-size: 26px;
+                  color: #222;
+                  font-family: arial;
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .t_prev{
+        left: 5px;
+        position: absolute;
+        top: 50%;
+        margin-top: -20px;
+        width: 34px;
+        height: 34px;
+        border: 3px solid rgba(153,153,153,.2);
+        cursor: pointer;
+        border-radius: 50%;
+        &::after{
+          content: "";
+          position: absolute;
+          left: 10px;
+          top: 8px;
+          width: 12px;
+          height: 12px;
+          border-left: solid 2px #ccc;
+          border-bottom: solid 2px #ccc;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+        }
+      }
+      .t_next{
+        right: 5px;
+        position: absolute;
+        top: 50%;
+        margin-top: -20px;
+        width: 34px;
+        height: 34px;
+        border: 3px solid rgba(153,153,153,.2);
+        cursor: pointer;
+        border-radius: 50%;
+        &::after{
+          content: "";
+          position: absolute;
+          left: 5px;
+          top: 8px;
+          width: 12px;
+          height: 12px;
+          border-right: solid 2px #ccc;
+          border-top: solid 2px #ccc;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  //今日限时购
+  .time_limit{
+    @include webz;
+    .fl{
+      float: left;
+    }
+    .fr{
+      float: right;
+    }
+
+    //限时购头部
+    .time_limit_top{
+      width: 100%;
+      height: 34px;
+      line-height: 34px;
+      color: #444;
+      font-size: 16px;
+      margin-top: 24px;
+      .home_title_line{
+        width: 4px;
+        height: 22px;
+        background: #f70800;
+        margin: 7px 8px 0 0;
+      }
+      .home_title_tt{
+        font-size: 24px;
+        color: #222;
+        margin-right: 5px;
+        font-weight: 600;
+        i{
+          font-size: 26px;
+          color: #f70800;
+        }
+      }
+      .day_djs{
+        font-size: 14px;
+        color: #666;
+        .livetime_day{
+          margin-left: 10px;
+          span{
+            background: #333;
+            color: #fff;
+            padding: 5px;
+          }
+        }
+      }
+    }
+
+    //限时购内容
+    .time_limit_content{
+      width: 100%;
+      padding-top: 20px;
+      .daily{
+        width: 240px;
+        height: 372px;
+        background: #FF472B;
+        background: -webkit-linear-gradient(top right, #ff8e4a ,#fa4444 );
+        background: -o-linear-gradient(top right, #ff8e4a ,#fa4444 );
+        background: -moz-linear-gradient(top right, #ff8e4a ,#fa4444 );
+        background: linear-gradient(to top right, #ff8e4a ,#fa4444 );
+        .daily_shop{
+          position: relative;
+          background: #FFF;
+          width: 210px;
+          height: 337px;
+          padding: 15px;
+          margin: 17px 0 0 15px;
+          box-shadow: 0 0 5px rgba(0,0,0,.5);
+          .shadow_lb{
+            position: absolute;
+            background: url(/images/shadow_lb.png);
+            background-size: 100% 100%;
+            width: 47px;
+            height: 30px;
+            left: -11px;
+            bottom: -11px;
+          }
+          .shadow_rt{
+            position: absolute;
+            background: url(/images/shadow_rt.png);
+            background-size: 100% 100%;
+            width: 47px;
+            height: 30px;
+            right: -11px;
+            top: -11px;
+          }
+          .everyday{
+            float: left;
+            width: 119px;
+            height: 30px;
+            line-height: 30px;
+            /* padding-left: 5%; */
+            border-radius: 0 0 10px 10px;
+            background: #aa2424;
+            color: #FFF;
+            font-size: 17px;
+            position: absolute;
+            left: 5px;
+            top: 0;
+            .icon_clock{
+              float: left;
+              width: 17px;
+              height: 19px;
+              background: url(/images/icon_clock.png) no-repeat;
+              background-size: 100%;
+              margin: 5px 8px 0 10px;
+
+            }
+          }
+          .daily_shop_img{
+            width: 100%;
+            height: 200px;
+            img{
+              width:100%;
+            }
+          }
+          .daily_shop_tjs{
+            font-size: 16px;
+            color: #f70800;
+            padding-top: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+          .daily_shop_tt{
+            font-size: 16px;
+            color: #222;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+          .daily_shop_box_yen{
+            padding-top: 15px;
+            .daily_shop_box_price{
+              font-size: 26px;
+              color: #222;
+              font-family: arial;
+              margin-right: 10px;
+            }
+            .line_price{
+              font-size: 14px;
+              line-height: 36px;
+              color: #999;
+              text-decoration: line-through;
+            }
+          }
+          .daily_num_tag{
+            width: 60px;
+            height: 66px;
+            padding-top: 6px;
+            position: absolute;
+            bottom: 0;
+            right: -5px;
+            background-image: url(/images/bg_tag.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            color: #FFF;
+            text-align: center;
+            .span1{
+              transform: rotate(15deg);
+              font-size: 14px;
+              line-height: 16px;
+              .span2{
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+
+      .tv_day_one{
+        width: 745px;
+        height: 372px;
+        border: 1px solid #ddd;
+        padding: 15px 10px;
+        background: #FFF;
+        .tv_day_one_list{
+          height: 340px;
+          overflow: hidden;
+          position: relative;
+          ul{
+            width:2169px;//js修改
+            left: -723px;
+            position: absolute;
+            li{
+              position: relative;
+              float: left;
+              height: 340px;
+              overflow: hidden;
+              width: 723px;
+              .tv_day_one_cc{
+                float: left;
+                width: 241px;
+                height: 340px;
+                padding: 0 15px;
+                border-left: 1px solid #eee;
+                margin-left: -1px;
+                .tv_day_img_box{
+                  width: 210px;
+                  height: 210px;
+                  img{
+                    width: 100%;
+                  }
+                }
+                .tv_live_box_tit{
+                  margin-top: 10px;
+                  height: 52px;
+                  line-height: 26px;
+                  overflow: hidden;
+                  padding: 0px;
+                  .img_tit{
+                    font-size: 16px;
+                    display: block;
+                    overflow: hidden;
+                    &::after{
+                      content: ".";
+                      display: block;
+                      height: 0;
+                      visibility: hidden;
+                      clear: both;
+                    }
+                  }
+                }
+                .tv_live_box_yen{
+                  margin-top: 5px;
+                  padding: 0;
+                  height: 26px;
+                  .tv_live_box_price{
+                    font-size: 26px;
+                    color: #222;
+                    font-family: arial;
+                    margin-right: 10px;
+                  }
+                  .line_price{
+                    font-size: 14px;
+                    line-height: 36px;
+                    color: #999;
+                    text-decoration: line-through;
+                  }
+                }
+                .tv_day_one_yen{
+                  margin-top: 12px;
+                  height: 26px;
+                  line-height: 26px;
+                  color: #666;
+                  font-size: 14px;
+                  .tv_live_box_surplus{
+                    width: 92px;
+                    height: 22px;
+                    line-height: 20px;
+                    font-size: 14px;
+                    background: #ffe3e2;
+                    border: 1px solid #f70800;
+                    color: #f70800;
+                    text-align: center;
+                  }
+                  .cor_red_ing{
+                    border: 1px solid #f70800;
+                    background: #f70800;
+                    color: #fff;
+                    font-size: 15px;
+                    height: 24px;
+                    line-height: 22px;
+                    text-align: center;
+                    border-radius: 13px;
+                    padding: 0 10px;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //品类精品促销
+  .promotion{
+    @include webz;
+    .fl{
+      float: left;
+    }
+    .fr{
+      float: right;
+    }
+    .pro_title{
+      width: 100%;
+      height: 34px;
+      line-height: 34px;
+      color: #444;
+      font-size: 16px;
+      margin-top: 24px;
+      .pro_title_line{
+        width: 4px;
+        height: 22px;
+        background: #f70800;
+        margin: 7px 8px 0 0;
+      }
+      .pro_title_tt{
+        font-size: 24px;
+        color: #222;
+        margin-right: 5px;
+        font-weight: 600;
+        i{
+          font-size: 26px;
+          color: #f70800;
+        }
+      }
+    }
+    //精选内容
+    .pro_content{
+      overflow: hidden;
+      width: 102%;
+      a{
+        display: block;
+        float: left;
+        margin-right: 20px;
+        padding-top: 20px;
+        img{
+          width: 490px;
+          height: 270px;
+          display: block;
+        }
+        .lazy_loading{
+          // background: url(../../images/2015/2015_public/zwt.jpg) no-repeat 50% 50%;
+          display: block;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  //全球尖货
+  .gl{
+    @include webz;
+    .cl{
+      clear: both;
+      overflow: hidden;
+    }
+    .gl_title{
+      width: 100%;
+      height: 34px;
+      line-height: 34px;
+      color: #444;
+      font-size: 16px;
+      margin-top: 24px;
+      .gl_title_line{
+        width: 4px;
+        height: 22px;
+        background: #f70800;
+        margin: 7px 8px 0 0;
+        display: inline-block;
+      }
+      .gl_title_tt{
+        font-size: 24px;
+        color: #222;
+        margin-right: 5px;
+        font-weight: 600;
+      }
+    }
+    //清除浮动
+    .c_clearfix{
+      &::after{
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+      }
+    }
+    //尖货内容
+    .gl_content{
+      padding-bottom: 30px;
+      ul{
+        width: 1020px;
+        li{
+          float: left;
+          margin-top: 20px;
+          margin-right: 20px;
+          width: 320px;
+          height: 462px;
+          overflow: hidden;
+          border: 1px solid #ddd;
+          .three_box{
+            padding: 10px;
+            background-color: #fff;
+            position: relative;
+            .three_img_box{
+              position: relative;
+              width: 298px;
+              height: 298px;
+              overflow: hidden;
+              z-index: 2;
+              .lazy_loading{
+                // background: url(/images/zwt.jpg) no-repeat 50% 50%;
+                display: block;
+                background-color: #fff;
+                width: 100%;
+              }
+
+            }
+            .three_box_tit{
+              margin-top: 18px;
+              height: 52px;
+              line-height: 26px;
+              overflow: hidden;
+              padding: 0 10px;
+              .img_tit{
+                font-size: 16px;
+                display: block;
+                overflow: hidden;
+              }
+            }
+            .three_subtit{
+              color: #f70800;
+              margin-top: 5px;
+              overflow: hidden;
+              height: 16px;
+              line-height: 16px;
+              font-size: 12px;
+              padding: 0 10px;
+            }
+            .three_yen{
+              margin-top: 15px;
+              height: 26px;
+              padding: 0 10px 3px 10px;
+              .three_price{
+                font-size: 26px;
+                color: #222;
+                font-family: arial;
+                margin-right: 10px;
+              }
+              .sale_price{
+                position: relative;
+                margin-top: 9px;
+                z-index: 1;
+                text-decoration: none;
+                font-size: 12px;
+                color: #999;
+                .i_pos_abs{
+                  position: absolute;
+                  top: -16px;
+                  left: 0;
+                  width: 205px;
+                  z-index: 2;
+                }
+                .five_star{
+                  font-size: 14px;
+                  line-height: 14px;
+                  margin-top: 3px;
+                  color: #ff504a;
+                }
+                .line_price{
+                  color: #999;
+                  text-decoration: line-through;
+                  i{
+                    font-size: 14px;
+                    font-family: arial;
+                  }
+                }
+              }
+              .purchased{
+                color: #666;
+                margin-top: 13px;
+                margin-left: 12px;
+                i{
+                  color: #f70800;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

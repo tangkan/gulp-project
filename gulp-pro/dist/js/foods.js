@@ -1,0 +1,1 @@
+"use strict";require(["config"],function(){require(["jquery","template","url","header","footer"],function(i,o,e,n,t){n.init(function(){i("#foodsLi").addClass("ac"),console.log(i("#foodsLi"))}),t.init()})});
